@@ -1,0 +1,28 @@
+.paginatitel {
+    background-color: rgb(255, 217, 82);
+    text-align: center;
+    font-family: "Comic Sans MS";
+    padding: 0.5%;
+    font-size: 24;
+}
+
+p {
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.logo{
+    float: right;
+    max-width: 25%;
+    max-height: 25%;
+}
+
+body {
+    background-image: url("../afb/background.png");
+    background-size: cover;
+}
+
+article{
+    
+}
