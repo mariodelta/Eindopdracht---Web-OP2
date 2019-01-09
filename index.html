@@ -7,22 +7,32 @@
     <title>Hoofdpagina: Basisschool de Bijenkorf</title>
 </head>
 <body>
-    <section id="container">
-        <nav class="navbar">
-            <ul>
-                <img class="logo" src="afb/Logo.png" alt="Logo bassischool">
-                <li>
-                    <p>Bassischool de Bijenkorf</p>
-                </li>
-            </ul>
-        </nav>
-    <article>
-    </article> 
+    <div class="header">        
+        <a href="#default" class="logo"><img class="logo" src="afb/Logo.png" alt="Logo bassischool"></a>       
+        <div class="titeltekst">Basisschool de Bijenkorf</div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button> 
+        </div>
 
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Startpagina</a>
+            <a href="#">Agenda</a>
+            <a href="#">Over Ons</a>
+            <a href="#">Fotoalbum</a>
+            <a href="#">Docentenomgeving</a>
+          </div>
+        
+    </div>
+    <article>
+        <div class="contentbox">
+            Hallo daar! dit is een test.
+        </div>        
+    </article>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+<script src="file/Javafunctions.js"></script>
 </html>
