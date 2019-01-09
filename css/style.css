@@ -1,28 +1,40 @@
-.paginatitel {
+nav.navbar {
+    height: 70px;
     background-color: rgb(255, 217, 82);
-    text-align: center;
-    font-family: "Comic Sans MS";
-    padding: 0.5%;
-    font-size: 24;
+}
+
+nav.navbar ul {
+    margin-left: -15px;
+}
+
+ul {
+    height: 100px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.logo {
+    float: right;
+    max-width: 200%;
+    max-height: 200%;
+    margin-top: 30px;
+    margin-left: 810px;
 }
 
 p {
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 22px;
-}
-
-.logo{
-    float: right;
-    max-width: 25%;
-    max-height: 25%;
+    margin-top: 60px;
+    margin-left: 300px;
 }
 
 body {
     background-image: url("../afb/background.png");
     background-size: cover;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Sans MS";
 }
 
-article{
+article {
     
 }
