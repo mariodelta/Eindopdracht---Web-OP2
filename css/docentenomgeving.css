@@ -1,0 +1,23 @@
+h2, p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+.btn-primary
+{
+    background-color: rgb(255, 217, 82);
+    color: black;
+    border: none;
+}
+
+.btn-primary:hover
+{
+    background-color: rgb(255, 217, 82);
+    color: black;
+    border: none;
+}
+
+.footer {
+    position: fixed;
+}
