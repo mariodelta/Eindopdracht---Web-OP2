@@ -23,7 +23,7 @@
             <a href="Agenda.html">Agenda</a>
             <a href="Overons.html">Over Ons</a>
             <a href="Fotoalbum.html">Fotoalbum</a>
-            <a href="Docentenomgeving.html">Docentenomgeving</a>
+            <a href="docenteninlog.html">Docentenomgeving</a>
           </div>
         
     </div>
@@ -35,14 +35,14 @@
             <form method="POST" action="file/login.php">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email-Adres</label>
-                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email-Adres">
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Email-Adres">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Wachtwoord</label>
-                    <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Wachtwoord">
+                    <input name="password" type="password" class="form-control" id="exampleInputPassword1" required placeholder="Wachtwoord">
                 </div>
                     <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <input name="signedin" type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Aangemeld blijven</label>
                 </div>
                     <button type="submit" class="btn btn-primary">Inloggen</button>
