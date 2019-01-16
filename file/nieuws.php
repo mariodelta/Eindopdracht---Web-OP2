@@ -36,7 +36,7 @@
         die("Connectie mislukt: " . $conn->connect_error);
     } 
     // Maak SQL
-    $sql = "SELECT titel, bericht, auteur FROM nieuws WHERE plaatsen = 1";
+    $sql = "SELECT titel, bericht, auteur FROM nieuws";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

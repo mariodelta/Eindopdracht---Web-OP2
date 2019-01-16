@@ -18,7 +18,7 @@
 
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Startpagina</a>
+            <a href="index.php">Startpagina</a>
             <a href="fullcalender.html">Agenda</a>
             <a href="Overons.html">Over Ons</a>
             <a href="Fotoalbum.html">Fotoalbum</a>
@@ -34,6 +34,7 @@
             <p>Op onze site kunt u informatie vinden over de school, maar u kunt ook onze agenda bekijken en zien welke activiteiten er plaatsvinden en als laatste kunt u mededelingen lezen die zijn gedaan door onze docenten</p>
             <p>Mocht u vragen hebben over onze school of wilt u uw kind aanmelden?, dan kunt u ons een email sturen. Ons Email-adres is te vinden op de over ons pagina.</p>
             <h3>Mededelingen</h3>
+            <?php include("file/nieuws.php"); ?>
         </div>        
     </article>
     <div class="footer">
