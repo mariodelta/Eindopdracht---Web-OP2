@@ -23,7 +23,7 @@
             <a href="Agenda.html">Agenda</a>
             <a href="Overons.html">Over Ons</a>
             <a href="Fotoalbum.html">Fotoalbum</a>
-            <a href="docenteninlog.html">Docentenomgeving</a>
+            <a href="docenteninlog.php">Docentenomgeving</a>
           </div>
         
     </div>
@@ -32,18 +32,14 @@
             <h2>Docentenomgeving</h2>
             <p>Dit is de Docentenomgeving van onze school</p>
             <p>Hier kunnen docenten inloggen</p>
-            <form method="POST" action="file/login.php">
+            <form method="POST" action="docenteninlog.php">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email-Adres</label>
-                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Email-Adres">
+                    <label for="exampleInputEmail1">E-mail Adres</label>
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="E-mail Adres">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Wachtwoord</label>
                     <input name="password" type="password" class="form-control" id="exampleInputPassword1" required placeholder="Wachtwoord">
-                </div>
-                    <div class="form-group form-check">
-                    <input name="signedin" type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Aangemeld blijven</label>
                 </div>
                     <button type="submit" class="btn btn-primary">Inloggen</button>
             </form>
@@ -54,6 +50,32 @@
             <p>Wij zijn ook te vinden op:</p><a href="https://www.facebook.com/debijenkorfgouda" class="fa fa-facebook"></a><a href="https://twitter.com/bsdebijenkorf" class="fa fa-twitter"></a><a href="https://www.linkedin.com/in/astrid-nuijten-492bb770/?originalSubdomain=nl" class="fa fa-linkedin"></a>
     </div>
 </body>
+
+<?php
+    if (isset($_POST["email"]) && isset($_POST["password"])) {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        
+        
+        $host  = $_SERVER['HTTP_HOST'];
+        $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+        $extra = 'docentenomgeving.html';
+        
+
+        switch (true) {
+            case ($email == "test@email.com" and $password == "1234"):
+                header("Location: http://$host$uri/$extra");
+                die();
+                
+                break;
+            
+            default:
+                # code...
+                break;
+        }
+    }
+    
+?>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
