@@ -20,7 +20,7 @@
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Startpagina</a>
-            <a href="Agenda.html">Agenda</a>
+            <a href="fullcalender.html">Agenda</a>
             <a href="Overons.html">Over Ons</a>
             <a href="Fotoalbum.html">Fotoalbum</a>
             <a href="docenteninlog.php">Docentenomgeving</a>
@@ -66,11 +66,10 @@
             case ($email == "test@email.com" and $password == "1234"):
                 header("Location: http://$host$uri/$extra");
                 die();
-                
                 break;
             
             default:
-                # code...
+            echo "<script>alert('Het ingevoerde e-mail adres of wachtwoord is onjuist.')</script>";
                 break;
         }
     }

@@ -1,3 +1,7 @@
+body {
+    font-family: "Comic Sans MS";
+}
+
 h2, p {
     text-align: center;
     margin: 0;
@@ -20,4 +24,17 @@ h2, p {
 
 .footer {
     position: fixed;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+p {
+    text-align: center;
+}
+
+.form-control {
+    width: 100;
 }

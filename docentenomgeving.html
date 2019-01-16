@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="Javafunctions.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
     <title>Hoofdpagina: Basisschool de Bijenkorf</title>
 </head>
 <body>
@@ -19,7 +22,7 @@
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Startpagina</a>
-            <a href="Agenda.html">Agenda</a>
+            <a href="fullcalender.html">Agenda</a>
             <a href="Overons.html">Over Ons</a>
             <a href="Fotoalbum.html">Fotoalbum</a>
             <a href="docenteninlog.php">Docentenomgeving</a>
@@ -28,7 +31,19 @@
     </div>
     <article>
         <div class="contentbox">
-
+            <form method="post" action="file/create.php">
+                <h1>Mededelingen aanmaken</h1>
+                <p>Hieronder kunt u de mededelingen aanmaken die worden weergegeven op de startpagina</p>
+                <br>               
+                <label for="auteur">Titel:</label>
+                <input type="text" name="titel" class="form-control" style="width: 300px;">
+                <label>Auteur:</label>
+                <input type="text" name="auteur" class="form-control" style="width: 300px;">
+                <br>
+                <textarea id="summernote" name="bericht"></textarea>
+                <button name="plaatsen" type="submit" class="btn btn-primary">Verstuur</button>
+              </form>
+              
         </div>        
     </article>
     <div class="footer">
@@ -41,4 +56,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="file/Javafunctions.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
 </html>

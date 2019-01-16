@@ -11,6 +11,13 @@ nav.navbar {
     
 }
 
+h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+
 body {
     background-image: url("../afb/background.png");
     background-size: cover;
