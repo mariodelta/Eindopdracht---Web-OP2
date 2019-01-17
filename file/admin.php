@@ -12,7 +12,7 @@
         die("Connectie mislukt: " . $conn->connect_error);
     } 
     // Maak SQL
-    $sql = "SELECT id, titel, bericht FROM nieuws WHERE plaatsen = 1";
+    $sql = "SELECT id, titel, bericht FROM nieuws";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

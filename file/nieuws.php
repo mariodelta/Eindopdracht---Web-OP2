@@ -36,7 +36,7 @@
         die("Connectie mislukt: " . $conn->connect_error);
     } 
     // Maak SQL
-    $sql = "SELECT titel, bericht, auteur FROM nieuws";
+    $sql = "SELECT id, titel, bericht, auteur FROM nieuws";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -45,10 +45,11 @@
             echo "<h1>" . $row["titel"] . "</h1><br>";
             echo "<h2>" . $row["bericht"] . "</h2><br>";
             echo "<h6>" . $row["auteur"] . "</h6><br>";
+            echo "<h6>" . $row["id"] . "</h6><br>";
             echo "<hr>";
         }
     } else {
-        echo "0 resultaten";
+        echo "Geen mededelingen";
     }
     $conn->close();
 ?>

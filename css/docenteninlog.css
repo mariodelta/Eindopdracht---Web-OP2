@@ -11,15 +11,5 @@ h2 {
 }
 
 .footer {
-    position: relative;
-}
-
-.PlaatsEnPasAan {
-    
-    
-}
-
-.Verwijder{
-    float: right
-    
+    position: fixed;
 }

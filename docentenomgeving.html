@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="Javafunctions.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/docentenomgeving.css" type="text/css">
     <title>Hoofdpagina: Basisschool de Bijenkorf</title>
 </head>
 <body>
@@ -31,19 +31,36 @@
     </div>
     <article>
         <div class="contentbox">
-            <form method="post" action="file/create.php">
-                <h1>Mededelingen aanmaken</h1>
+                <h1>Mededelingen aanmaken/aanpassen/verwijderen</h1>
                 <p>Hieronder kunt u de mededelingen aanmaken die worden weergegeven op de startpagina</p>
-                <br>               
-                <label for="auteur">Titel:</label>
-                <input type="text" name="titel" class="form-control" style="width: 300px;">
-                <label>Auteur:</label>
-                <input type="text" name="auteur" class="form-control" style="width: 300px;">
-                <br>
-                <textarea id="summernote" name="bericht"></textarea>
-                <button name="plaatsen" type="submit" class="btn btn-primary">Verstuur</button>
-              </form>
-              
+                <p>U kunt hier ook de gemaakte mededelingen aanpassen en eventueel verwijderen</p>
+                <br>  
+                <div class="Verwijder">
+                        <form action="file/create.php">
+                            <label for="ID">ID:</label>
+                            <input type="text" name="id" class="form-control" style="width: 300px;">
+                            <input type="checkbox" value="checked" name="checkbox" class="form-check-input" id="exampleCheck1">
+                            <br>  
+                            <button type="submit" name="verwijder" class="btn btn-primary">Verwijder</button>
+                        </form>
+                </div>
+            <div class="PlaatsEnPasAan">
+                    <form method="post" action="file/create.php">
+                        
+                        <label for="ID">ID:</label>
+                        <input type="text" name="id" class="form-control" style="width: 300px;">             
+                        <label for="titel">Titel:</label>
+                        <input required type="text" name="titel" class="form-control" style="width: 300px;">
+                        <label>Auteur:</label>
+                        <input required type="text" name="auteur" class="form-control" style="width: 300px;">
+                        <label for="Change">Mededeling aanpassen?:</label>
+                        <input type="checkbox" value="checked" name="checkbox" class="form-check-input" id="exampleCheck1">
+                        <br>
+                        <textarea required id="summernote" name="bericht"></textarea>
+                        <button name="plaatsen" type="submit" class="btn btn-primary">Plaats</button>
+                        <br>
+                      </form>
+            </div>
         </div>        
     </article>
     <div class="footer">
@@ -55,7 +72,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script src="file/Javafunctions.js"></script>
+<script src="file/Javafunctions.js"></script> 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
